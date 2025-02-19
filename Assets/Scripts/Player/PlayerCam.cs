@@ -14,6 +14,7 @@ public class PlayerCam : MonoBehaviour
 
     void Start()
     {
+        // hide and lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -24,6 +25,7 @@ public class PlayerCam : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X") * sensX * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * sensY * Time.deltaTime;
 
+        // rotate player with wield unity camera math
         yRotation += mouseX;
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
