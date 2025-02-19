@@ -869,6 +869,7 @@ GameObject:
   - component: {fileID: 1698179046}
   - component: {fileID: 1698179047}
   - component: {fileID: 1698179048}
+  - component: {fileID: 1698179049}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -934,6 +935,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  dashSpeed: 15
+  dashSpeedChangeFactor: 40
   groundDrag: 5
   crouchSpeed: 2.5
   crouchYScale: 0.6
@@ -943,6 +946,30 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   orientation: {fileID: 1282413488}
+  state: 0
+  isDashing: 0
+--- !u!114 &1698179049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698179043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 647ccc9df05bf894f89fb92186704ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orientation: {fileID: 1282413488}
+  playerCam: {fileID: 2130123720}
+  dashForce: 20
+  dashDuration: 0.25
+  useCameraForward: 0
+  allowAllDirections: 1
+  disableGravity: 0
+  resetVal: 1
+  dashCooldown: 1.5
+  dashKey: 32
 --- !u!1 &1806790484
 GameObject:
   m_ObjectHideFlags: 0

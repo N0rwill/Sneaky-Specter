@@ -34,4 +34,10 @@ public class PlayerCam : MonoBehaviour
         transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
         orientation.localRotation = Quaternion.Euler(0f, yRotation, 0f);
     }
+
+    public void DoFov(float endValue)
+    {
+        float zoomSpeed = 2f;
+        GetComponent<Camera>().fieldOfView = Mathf.Lerp(GetComponent<Camera>().fieldOfView, endValue, Time.deltaTime * zoomSpeed);
+    }
 }
