@@ -935,6 +935,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   groundDrag: 5
+  crouchSpeed: 2.5
+  crouchYScale: 0.6
+  crouchKey: 306
   playerHeight: 2
   groundMask:
     serializedVersion: 2
