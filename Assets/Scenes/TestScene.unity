@@ -948,6 +948,7 @@ MonoBehaviour:
   orientation: {fileID: 1282413488}
   state: 0
   isDashing: 0
+  playerCam: {fileID: 963194229}
 --- !u!114 &1698179049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -964,6 +965,8 @@ MonoBehaviour:
   playerCam: {fileID: 2130123720}
   dashForce: 20
   dashDuration: 0.25
+  pCam: {fileID: 963194229}
+  dashFov: 75
   useCameraForward: 0
   allowAllDirections: 1
   disableGravity: 0
