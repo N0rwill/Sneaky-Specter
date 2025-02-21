@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Dashing : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class Dashing : MonoBehaviour
     public float dashCooldown;
     private float dashCooldownTimer;
 
+    [SerializeField] private Image dashCooldownImage;
+
     [Header("KeyBinds")]
     public KeyCode dashKey = KeyCode.Space;
 
@@ -35,6 +38,7 @@ public class Dashing : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         playerMovement = GetComponent<PlayerMovement>();
+        dashCooldownImage.fillAmount = 0;
     }
 
     void Update()
@@ -42,8 +46,20 @@ public class Dashing : MonoBehaviour
         if (Input.GetKeyDown(dashKey))
             Dash();
 
+        DashCooldownUI();
+    }
+
+    private void DashCooldownUI()
+    {
         if (dashCooldownTimer > 0)
+        {
+            // dash cooldown timer
             dashCooldownTimer -= Time.deltaTime;
+            // dash cooldown image fill amount
+            dashCooldownImage.fillAmount = 0 + (dashCooldownTimer / dashCooldown);
+        }
+        else
+            dashCooldownImage.fillAmount = 0;
     }
 
     private void Dash()

@@ -16,12 +16,15 @@ public class HudController : MonoBehaviour
 
     public void EnanbleInteractText(string text)
     {
+        // set the text to whatevers in the inspector + (E)
         interactText.text = text + " (E)";
+        // enable the text
         interactText.gameObject.SetActive(true);
     }
 
     public void DisableInteractText()
     {
+        // disable the text
         interactText.gameObject.SetActive(false);
     }
 }

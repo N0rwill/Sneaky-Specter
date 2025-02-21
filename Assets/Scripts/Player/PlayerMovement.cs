@@ -72,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
         // ground check raycast
         isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, groundMask);
 
+        // set drag based on player state
         if (state == MovementState.Walking || state == MovementState.Crouching)
             rb.drag = groundDrag;
         else
@@ -97,8 +98,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isDashing)
         {
+            // set state to dashing
             state = MovementState.Dashing;
+            // set speed to dash speed
             desiredMoveSpeed = dashSpeed;
+            // set speed change factor
             speedChangefactor = dashSpeedChangeFactor;
 
             // Change fov
@@ -125,9 +129,13 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.air;
         }
 
+        // if the desired move speed has changed bool
         bool desiredMoveSpeedChanged = desiredMoveSpeed != lastDesiredMoveSpeed;
+
+        // if the player was dashing last frame, keep the momentum
         if (lastState == MovementState.Dashing) keepMomemtum = true;
 
+        // if the desired move speed has changed, start the coroutine to smoothly lerp the move speed
         if (desiredMoveSpeedChanged)
         {
             if (keepMomemtum)
@@ -142,6 +150,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        // set the last desired move speed and state
         lastDesiredMoveSpeed = desiredMoveSpeed;
         lastState = state;
     }
@@ -155,6 +164,7 @@ public class PlayerMovement : MonoBehaviour
 
         float boostFactor = speedChangefactor;
 
+        // lerp the move speed
         while (time < difference)
         {
             moveSpeed = Mathf.Lerp(startValue, desiredMoveSpeed, time / difference);

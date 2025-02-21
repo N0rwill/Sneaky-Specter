@@ -17,6 +17,10 @@ public class PlayerCam : MonoBehaviour
         // hide and lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        // Initialize xRotation to a neutral starting position
+        xRotation = 0f;
+        yRotation = 0f;
     }
 
     void Update()
