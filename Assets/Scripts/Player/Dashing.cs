@@ -31,8 +31,8 @@ public class Dashing : MonoBehaviour
 
     [SerializeField] private Image dashCooldownImage;
 
-    [Header("KeyBinds")]
-    public KeyCode dashKey = KeyCode.Space;
+    //[Header("KeyBinds")]
+    //public KeyCode dashKey = KeyCode.Space;
 
     void Start()
     {
@@ -43,7 +43,7 @@ public class Dashing : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(dashKey))
+        if (Input.GetButtonDown("Dash"))
             Dash();
 
         DashCooldownUI();

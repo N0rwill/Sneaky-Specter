@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     private float startYScale;
 
     [Header("KeyBinds")]
-    public KeyCode crouchKey = KeyCode.LeftControl;
+    //public KeyCode crouchKey = KeyCode.LeftControl;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -108,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
             // Change fov
             playerCam.DoFov(75f);
         }
-        else if (Input.GetKey(crouchKey))
+        else if (Input.GetButton("Crouch"))
         {
             state = MovementState.Crouching;
             desiredMoveSpeed = crouchSpeed;
@@ -186,7 +186,7 @@ public class PlayerMovement : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
 
         // start crouch
-        if (Input.GetKeyDown(crouchKey))
+        if (Input.GetButtonDown("Crouch"))
         {
             // set player scale to crouch scale
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
@@ -195,7 +195,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // stop crouch
-        if (Input.GetKeyUp(crouchKey))
+        if (Input.GetButtonUp("Crouch"))
         {
             // set player scale back to normal
             transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
