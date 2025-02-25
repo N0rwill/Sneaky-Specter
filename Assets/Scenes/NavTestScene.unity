@@ -1390,7 +1390,6 @@ GameObject:
   - component: {fileID: 1038641266}
   - component: {fileID: 1038641265}
   - component: {fileID: 1038641264}
-  - component: {fileID: 1038641269}
   - component: {fileID: 1038641270}
   m_Layer: 0
   m_Name: Enemy
@@ -1409,7 +1408,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 9.57
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1509,19 +1508,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1038641269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038641263}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13c427437493ab643af89815964e5a78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1698179046}
 --- !u!114 &1038641270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1535,8 +1521,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 1038641264}
-  range: 1
-  centrePoint: {fileID: 1698179046}
+  range: 10
+  centrePoint: {fileID: 1365272014}
 --- !u!1 &1164911936 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 548502966505241852, guid: 6c072ec0c7168c040821e1abad7bc5a3, type: 3}
@@ -2355,6 +2341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa99150e3c7aaf43ac4e30f602b34a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpen: {fileID: 0}
   turnOn:
     m_PersistentCalls:
       m_Calls:
@@ -2370,9 +2357,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  turnOff:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1803768478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2736,6 +2720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa99150e3c7aaf43ac4e30f602b34a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpen: {fileID: 0}
   turnOn:
     m_PersistentCalls:
       m_Calls:
@@ -2750,21 +2735,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-  turnOff:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 951582503}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!64 &1938495201
 MeshCollider:

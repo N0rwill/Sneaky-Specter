@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI; //important
+using UnityEngine.AI; 
 
-//if you use this code you are contractually obligated to like the YT video
-public class EnemyMovement : MonoBehaviour //don't forget to change the script name if you haven't
+
+public class EnemyMovement : MonoBehaviour 
 {
     public NavMeshAgent agent;
     public float range; //radius of sphere
@@ -20,15 +20,7 @@ public class EnemyMovement : MonoBehaviour //don't forget to change the script n
 
     void Update()
     {
-        if (agent.remainingDistance <= agent.stoppingDistance) //done with path
-        {
-            Vector3 point;
-            if (RandomPoint(centrePoint.position, range, out point)) //pass in our centre point and radius of area
-            {
-                Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
-                agent.SetDestination(point);
-            }
-        }
+        RandomMove();
 
     }
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
@@ -46,6 +38,19 @@ public class EnemyMovement : MonoBehaviour //don't forget to change the script n
 
         result = Vector3.zero;
         return false;
+    }
+
+    private void RandomMove()
+    {
+        if (agent.remainingDistance <= agent.stoppingDistance) //done with path
+        {
+            Vector3 point;
+            if (RandomPoint(centrePoint.position, range, out point)) //pass in our centre point and radius of area
+            {
+                Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
+                agent.SetDestination(point);
+            }
+        }
     }
 
 
