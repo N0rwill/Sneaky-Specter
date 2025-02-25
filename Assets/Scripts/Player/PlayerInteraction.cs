@@ -71,10 +71,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        if (cam != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawRay(cam.position, cam.forward * playerReach);
-        }
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(cam.position, cam.forward * playerReach);
     }
 }
