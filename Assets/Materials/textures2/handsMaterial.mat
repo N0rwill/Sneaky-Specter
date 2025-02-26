@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vaseMaterial
+  m_Name: handsMaterial
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -27,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 3249e2da1eaeefc4b9a443d553b07864, type: 3}
+        m_Texture: {fileID: 2800000, guid: 20a6cf2886fcb7c46bb216d1a25cbf2a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -35,7 +35,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
-        m_Texture: {fileID: 2800000, guid: 2b92661b8c30c14419f7c3a3cb24dde3, type: 3}
+        m_Texture: {fileID: 2800000, guid: c7b46e58fc734484ca79f2b252de67a1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
@@ -47,19 +47,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bd4ba1d2097e43e4381fbe45980544a4, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4030d64d1211bbe47baed900f8e125f9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 2b92661b8c30c14419f7c3a3cb24dde3, type: 3}
+        m_Texture: {fileID: 2800000, guid: c7b46e58fc734484ca79f2b252de67a1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 2b92661b8c30c14419f7c3a3cb24dde3, type: 3}
+        m_Texture: {fileID: 2800000, guid: c7b46e58fc734484ca79f2b252de67a1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 2b92661b8c30c14419f7c3a3cb24dde3, type: 3}
+        m_Texture: {fileID: 2800000, guid: c7b46e58fc734484ca79f2b252de67a1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
