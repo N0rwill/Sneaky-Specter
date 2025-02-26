@@ -17,6 +17,9 @@ public class LightOn : MonoBehaviour
             isOn = true;
             turnOn.Invoke();
 
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+
             doorOpen.LampCounter();
         }
     }
