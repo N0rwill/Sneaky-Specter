@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class VasePush : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class VasePush : MonoBehaviour
 
     Rigidbody rb;
     public Transform player;
+    [SerializeField] private ParticleSystem particles;
 
     void Start()
     {
@@ -33,10 +35,16 @@ public class VasePush : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground") && !isBroken)
         {
             isBroken = true;
-            //AudioSource audio = GetComponent<AudioSource>();
-            //audio.Play();
+            rb.isKinematic = true;
+            GetComponent<Collider>().enabled = false;
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            MeshRenderer mesh = GetComponent<MeshRenderer>();
+            mesh.enabled = false;
+            particles.Play();
+            Outline.Destroy(GetComponent<Outline>());
 
-            Destroy(gameObject, 1);
+            Destroy(gameObject, 5);
         }
     }
 }
