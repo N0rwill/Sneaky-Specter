@@ -11,6 +11,10 @@ public class EnemyMovement : MonoBehaviour
 
     public Transform centrePoint; //centre of the area the agent wants to move around in
     //instead of centrePoint you can set it as the transform of the agent if you don't care about a specific area
+    public Transform player;
+    public float fieldOfView = 120f;
+    private bool playerInSight;
+
 
     void Start()
     {
@@ -20,7 +24,14 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        RandomMove();
+        if (playerInSight)
+        {
+            chase();
+        }
+        else
+        {
+            RandomMove();
+        }
 
     }
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
@@ -50,6 +61,43 @@ public class EnemyMovement : MonoBehaviour
                 Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
                 agent.SetDestination(point);
             }
+        }
+    }
+
+    private void chase()
+    {
+        agent.SetDestination(player.position);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
+        if (other.transform == player)
+        {
+            Vector3 direction = other.transform.position - transform.position;
+            float angle = Vector3.Angle(direction, transform.forward);
+
+            if (angle < fieldOfView * 0.5f)
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, direction.normalized, out hit, range))
+                {
+                    if (hit.transform == player)
+                    {
+                        playerInSight = true;
+                        Debug.Log("Player in sight");
+                    }
+                }
+            }
+        
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.transform == player)
+        {
+            playerInSight = false;
         }
     }
 
