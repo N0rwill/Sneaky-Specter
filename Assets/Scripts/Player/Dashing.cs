@@ -31,9 +31,6 @@ public class Dashing : MonoBehaviour
 
     [SerializeField] private Image dashCooldownImage;
 
-    //[Header("KeyBinds")]
-    //public KeyCode dashKey = KeyCode.Space;
-
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -77,14 +74,11 @@ public class Dashing : MonoBehaviour
         else
             forwardT = orientation; // where the player facing
 
-        // call the GetDirection method
         Vector3 direction = GetDirection(forwardT);
 
-        // apply dash force
         Vector3 forceToApply = direction * dashForce;
 
-        // disable gravity if needed
-        if (disableGravity)
+        if (!disableGravity)
             rb.useGravity = false;
 
         delayedForceToApply = forceToApply;
