@@ -13,17 +13,27 @@ public class EnemyMovement : MonoBehaviour
     //instead of centrePoint you can set it as the transform of the agent if you don't care about a specific area
     public Transform player;
     public float fieldOfView = 120f;
+
+    public float distance;
     private bool playerInSight;
+    private Vector3 lastRaycastDirection;
+    private bool isLooking;
+
 
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        playerInSight = false;
     }
 
 
     void Update()
     {
+        distance = Vector3.Distance(this.transform.position, player.position);
+
+        CheckPlayerInSight();
+
         if (playerInSight)
         {
             chase();
@@ -34,6 +44,53 @@ public class EnemyMovement : MonoBehaviour
         }
 
     }
+    private void chase()
+    {
+        agent.SetDestination(player.position);
+        if(!playerInSight) 
+        {
+            RandomMove();
+        }
+    }
+
+    private void CheckPlayerInSight()
+    {
+        Vector3 direction = player.position - transform.position;
+        float angle = Vector3.Angle(direction, transform.forward);
+
+        if (angle < fieldOfView * 0.5f)
+        {
+            RaycastHit hit;
+            isLooking = Physics.Raycast(transform.position + Vector3.up * 1.5f, direction.normalized, out hit, range);
+            if (isLooking == player)
+            {
+                lastRaycastDirection = direction.normalized;
+                if (hit.transform == player)
+                {
+                    playerInSight = true;
+                    Debug.Log("Player in sight");
+                    return;
+                }
+            }
+        }
+
+        playerInSight = false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (playerInSight)
+        {
+            Gizmos.color = Color.red;
+        }
+        else
+        {
+            Gizmos.color = Color.green;
+        }
+
+        Gizmos.DrawRay(transform.position + Vector3.up * 1.5f, lastRaycastDirection * range);
+    }
+
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
 
@@ -53,6 +110,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void RandomMove()
     {
+
         if (agent.remainingDistance <= agent.stoppingDistance) //done with path
         {
             Vector3 point;
@@ -61,43 +119,6 @@ public class EnemyMovement : MonoBehaviour
                 Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
                 agent.SetDestination(point);
             }
-        }
-    }
-
-    private void chase()
-    {
-        agent.SetDestination(player.position);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
-        if (other.transform == player)
-        {
-            Vector3 direction = other.transform.position - transform.position;
-            float angle = Vector3.Angle(direction, transform.forward);
-
-            if (angle < fieldOfView * 0.5f)
-            {
-                RaycastHit hit;
-                if (Physics.Raycast(transform.position, direction.normalized, out hit, range))
-                {
-                    if (hit.transform == player)
-                    {
-                        playerInSight = true;
-                        Debug.Log("Player in sight");
-                    }
-                }
-            }
-        
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.transform == player)
-        {
-            playerInSight = false;
         }
     }
 
