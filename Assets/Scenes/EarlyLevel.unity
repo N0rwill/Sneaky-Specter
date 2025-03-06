@@ -18052,7 +18052,11 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
+<<<<<<< Updated upstream
   m_VoxelSize: 0.16666667
+=======
+  m_VoxelSize: 0.33333334
+>>>>>>> Stashed changes
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 8c63766e5646bfe4fbe261a2e7de6f27, type: 2}
   m_BuildHeightMesh: 0
@@ -39282,7 +39286,6 @@ SceneRoots:
   - {fileID: 2038020357}
   - {fileID: 129270644}
   - {fileID: 1802035347}
-  - {fileID: 951648977}
   - {fileID: 63536640}
   - {fileID: 804964622}
   - {fileID: 23290667}
