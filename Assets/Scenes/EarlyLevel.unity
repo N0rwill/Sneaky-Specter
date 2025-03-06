@@ -15953,8 +15953,16 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1735375193797725662, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 332929787}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1395722430062188388, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2134787675}
   m_SourcePrefab: {fileID: 100100000, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
+--- !u!1 &804964623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1395722430062188388, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
+  m_PrefabInstance: {fileID: 804964622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &806014483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17168,11 +17176,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 476905560757288104, guid: ab1ba253e63261f428cb914b38d80152, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2
+      value: -0.188
       objectReference: {fileID: 0}
     - target: {fileID: 476905560757288104, guid: ab1ba253e63261f428cb914b38d80152, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.48
+      value: 0.585
       objectReference: {fileID: 0}
     - target: {fileID: 476905560757288104, guid: ab1ba253e63261f428cb914b38d80152, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38937,6 +38945,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1735375193797725662, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
   m_PrefabInstance: {fileID: 804964622}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2134787675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804964623}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01083464, y: 0.0263294, z: 0.010834637}
+  m_Center: {x: 0, y: 0.002437898, z: 0}
 --- !u!1001 &2135663603
 PrefabInstance:
   m_ObjectHideFlags: 0
