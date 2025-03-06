@@ -12,8 +12,6 @@ public class FlipSwitch : MonoBehaviour
 
     bool isFlipped = false;
 
-
-
     void Start()
     {
         hinge.transform.Rotate(0, 0, 50);
@@ -25,10 +23,10 @@ public class FlipSwitch : MonoBehaviour
         {
             isFlipped = true;
 
-            hinge.transform.Rotate(0, 0, -70);
+            hinge.transform.Rotate(0, 0, -110);
 
             AudioSource audio = GetComponent<AudioSource>();
-            audio.Play();
+            /// audio.Play();
 
             doorOpen.SwitchCounter();
         }
