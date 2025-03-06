@@ -4,27 +4,32 @@ using UnityEngine;
 
 public class DoorOpen : MonoBehaviour
 {
-    public GameObject door;
+    public Transform door;
     public bool isOpen = false;
 
-    public int lampCount = 0;
+    public int switchCount = 0;
 
-    public void OpenDoor(int lampCount)
+    void Start()
+    {
+        door = GetComponent<Transform>();
+    }
+
+    public void OpenDoor(int switchCount)
     {
         if (!isOpen)
         {
-            door.transform.Rotate(0, 90, 0);
+            door.Rotate(0, -90, 0);
             isOpen = true;
         }
     }
 
-    public void LampCounter()
+    public void SwitchCounter()
     {
-        lampCount++;
+        switchCount++;
 
-        if (lampCount == 3)
+        if (switchCount == 3)
         {
-            OpenDoor(lampCount);
+            OpenDoor(switchCount);
         }
     }
 }
