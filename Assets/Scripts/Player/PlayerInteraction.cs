@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    public HudController hudController;
+
     public float playerReach = 7.5f;
     public Transform cam;
     Interactable currentInteractable;
