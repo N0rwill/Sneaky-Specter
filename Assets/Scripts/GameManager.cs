@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
         Application.Quit();
         Debug.Log("Application has quit.");
     }
+
+   
     // Start is called before the first frame update
     void Start()
     {
