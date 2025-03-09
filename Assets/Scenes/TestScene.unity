@@ -633,9 +633,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70478d30a7ccebf4181f9655dfee91bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 256774729}
+  door: {fileID: 256774734}
   isOpen: 0
-  lampCount: 0
+  switchCount: 0
 --- !u!65 &256774731
 BoxCollider:
   m_ObjectHideFlags: 0
