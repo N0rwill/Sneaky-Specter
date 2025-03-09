@@ -1750,7 +1750,7 @@ Transform:
   m_GameObject: {fileID: 145381017}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19, y: 0.33, z: 61.62}
+  m_LocalPosition: {x: -19.73, y: 0.33, z: 63.9}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15791,93 +15791,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 370447d21b91cab4fabe5dbfc4ebf484, type: 3}
---- !u!1 &706753324 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8736834859139603540, guid: 13fc02d9ca25bc64d8732b29fcf9144a, type: 3}
-  m_PrefabInstance: {fileID: 1856682705}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &706753326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706753324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5887b6ad04dff43aba10c63da2157a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorOpen: {fileID: 595902072}
-  hinge: {fileID: 877157181}
---- !u!114 &706753327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706753324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34d3b2432bfe8cf44b1fabbe718d74a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: Pull the lever
-  onInteract:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 706753326}
-        m_TargetAssemblyTypeName: FlipSwitch, Assembly-CSharp
-        m_MethodName: Flip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &706753328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706753324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 0.93188804, b: 0.5518868, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!64 &706753329
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706753324}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3762910111743739066, guid: 927f713e8c390f34f8620578185903c5, type: 3}
 --- !u!1 &703707882
 GameObject:
   m_ObjectHideFlags: 0
@@ -16015,6 +15928,93 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703707882}
   m_CullTransparentMesh: 1
+--- !u!1 &706753324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8736834859139603540, guid: 13fc02d9ca25bc64d8732b29fcf9144a, type: 3}
+  m_PrefabInstance: {fileID: 1856682705}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &706753326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706753324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5887b6ad04dff43aba10c63da2157a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorOpen: {fileID: 595902072}
+  hinge: {fileID: 877157181}
+--- !u!114 &706753327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706753324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d3b2432bfe8cf44b1fabbe718d74a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pull the lever
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 706753326}
+        m_TargetAssemblyTypeName: FlipSwitch, Assembly-CSharp
+        m_MethodName: Flip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &706753328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706753324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.93188804, b: 0.5518868, a: 1}
+  outlineWidth: 8
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!64 &706753329
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706753324}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3762910111743739066, guid: 927f713e8c390f34f8620578185903c5, type: 3}
 --- !u!1001 &709648071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18481,11 +18481,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
---- !u!1 &877157181 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8088334217370598815, guid: 13fc02d9ca25bc64d8732b29fcf9144a, type: 3}
-  m_PrefabInstance: {fileID: 1856682705}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &875033511
 GameObject:
   m_ObjectHideFlags: 0
@@ -18561,6 +18556,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875033511}
   m_CullTransparentMesh: 1
+--- !u!1 &877157181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8088334217370598815, guid: 13fc02d9ca25bc64d8732b29fcf9144a, type: 3}
+  m_PrefabInstance: {fileID: 1856682705}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &878638474 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 447060337792877749, guid: ff5fb8aeecd12e949bf0499a99e3c7f6, type: 3}
@@ -37088,9 +37088,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70478d30a7ccebf4181f9655dfee91bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hudController: {fileID: 0}
   door: {fileID: 0}
   isOpen: 0
-  lampCount: 0
+  isUnlocked: 0
+  switchCount: 0
 --- !u!4 &1804411144 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6940504787331019801, guid: 0a4e1e2275ab4b5479d34d28b52da795, type: 3}
