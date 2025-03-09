@@ -20,7 +20,7 @@ public class LightOn : MonoBehaviour
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();
 
-            doorOpen.SwitchCounter();
+            doorOpen.LampCounter();
         }
     }
 }
