@@ -22,6 +22,7 @@ public class BookPush : MonoBehaviour
             canPush = false;
             Vector3 direction = new Vector3(transform.position.x - player.position.x, 0, transform.position.z - player.position.z).normalized;
             rb.AddForce(direction * 5, ForceMode.Impulse);
+            StartCoroutine(PushCooldown());
         }
     }
 
