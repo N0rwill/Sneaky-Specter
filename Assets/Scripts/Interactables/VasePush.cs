@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class VasePush : MonoBehaviour
 {
     private bool isBroken = false;
-    private bool isPushed = false;
+    private bool canPush = true;
 
     Rigidbody rb;
     public Transform player;
@@ -21,15 +21,25 @@ public class VasePush : MonoBehaviour
 
     public void Push()
     {
-        if (!isPushed)
+        if (!isBroken && canPush)
         {
-            isPushed = true;
+            canPush = false;
             Vector3 direction = new Vector3(transform.position.x - player.position.x, 0, transform.position.z - player.position.z).normalized;
             rb.AddForce(direction * 5, ForceMode.Impulse);
+            StartCoroutine(PushCooldown());
         }
     }
 
-    // when colliding witht the ground the vase will break
+    private IEnumerator PushCooldown()
+    {
+        yield return new WaitForSeconds(1f);
+        if (!isBroken)
+        {
+            canPush = true;
+        }
+    }
+
+    // when colliding with the ground the vase will break
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground") && !isBroken)
