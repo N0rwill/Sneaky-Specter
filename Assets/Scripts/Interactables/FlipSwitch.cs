@@ -21,6 +21,7 @@ public class FlipSwitch : MonoBehaviour
         if (!isFlipped)
         {
             isFlipped = true;
+            doorOpen.SwitchCounter();
             StartCoroutine(SmoothRotate(hinge.transform, new Vector3(0, 0, -110), 0.5f));
 
             AudioSource audio = GetComponent<AudioSource>();
