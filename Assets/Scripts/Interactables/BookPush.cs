@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BookPush : MonoBehaviour
 {
-    private bool isPushed = false;
+    private bool canPush = true;
+    private bool isOnFloor = false;
 
     Rigidbody rb;
     public Transform player;
@@ -16,11 +17,20 @@ public class BookPush : MonoBehaviour
 
     public void Push()
     {
-        if (!isPushed)
+        if (!isOnFloor && canPush)
         {
-            isPushed = true;
+            canPush = false;
             Vector3 direction = new Vector3(transform.position.x - player.position.x, 0, transform.position.z - player.position.z).normalized;
             rb.AddForce(direction * 5, ForceMode.Impulse);
+        }
+    }
+
+    private IEnumerator PushCooldown()
+    {
+        yield return new WaitForSeconds(1f);
+        if (!isOnFloor)
+        {
+            canPush = true;
         }
     }
 
@@ -29,8 +39,7 @@ public class BookPush : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
-            rb.isKinematic = true;
-            GetComponent<Collider>().enabled = false;
+            isOnFloor = true;
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();
             Outline.Destroy(GetComponent<Outline>());
