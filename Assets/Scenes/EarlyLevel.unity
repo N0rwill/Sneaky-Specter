@@ -135,6 +135,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (14)
@@ -1663,6 +1667,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (1)
@@ -3385,6 +3393,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (2)
@@ -8412,6 +8424,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (10)
@@ -12951,6 +12967,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (4)
@@ -13090,6 +13110,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (3)
@@ -14798,6 +14822,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (2)
@@ -14946,6 +14974,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (16)
@@ -15024,6 +15056,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (3)
@@ -17171,6 +17207,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (1)
@@ -17250,6 +17290,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (2)
@@ -17431,6 +17475,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (7)
@@ -17988,6 +18036,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (1)
@@ -18428,6 +18480,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (1)
@@ -19400,6 +19456,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (18)
@@ -20321,6 +20381,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (6)
@@ -20534,6 +20598,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (2)
@@ -21198,6 +21266,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (6)
@@ -21822,6 +21894,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal
@@ -22844,6 +22920,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (4)
@@ -25118,6 +25198,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (11)
@@ -25863,6 +25947,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (7)
@@ -26315,6 +26403,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (9)
@@ -26776,6 +26868,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (15)
@@ -27029,6 +27125,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (17)
@@ -32379,6 +32479,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal
@@ -33466,6 +33570,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal
@@ -33476,7 +33584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7579327255994633457, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.125
+      value: 0.942
       objectReference: {fileID: 0}
     - target: {fileID: 7579327255994633457, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36975,6 +37083,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (13)
@@ -37687,6 +37799,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (8)
@@ -41257,6 +41373,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (3)
@@ -41516,6 +41636,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (5)
@@ -41676,6 +41800,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (4)
@@ -42019,6 +42147,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (5)
@@ -42193,6 +42325,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 671586112}
     m_Modifications:
+    - target: {fileID: 6993486264038434504, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 145381018}
     - target: {fileID: 7090070267305612875, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_Name
       value: VaseFinal (12)
