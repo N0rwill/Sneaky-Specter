@@ -40976,6 +40976,7 @@ GameObject:
   - component: {fileID: 1898318412}
   - component: {fileID: 1898318411}
   - component: {fileID: 1898318410}
+  - component: {fileID: 1898318414}
   m_Layer: 5
   m_Name: Hud
   m_TagString: Untagged
@@ -41083,6 +41084,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1898318414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898318408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 928b96ed013d6ed45a256ebdab30c5dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 1416033511}
 --- !u!1 &1900645700 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3505172485837808466, guid: 7a3dae9ea407c2a4cb26039a4abbffd8, type: 3}
