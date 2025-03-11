@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 879debcd2d781d24e9515e674f117796
+guid: 79c9602b021da4a42b32b474e85cfa3c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: SitUp
+      name: HandsIdle
       takeName: Take 001
       internalID: 1827226128182048838
-      firstFrame: 1
-      lastFrame: 30
+      firstFrame: 0
+      lastFrame: 725
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
