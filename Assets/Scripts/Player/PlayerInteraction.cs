@@ -10,12 +10,15 @@ public class PlayerInteraction : MonoBehaviour
     public Transform cam;
     Interactable currentInteractable;
 
+    public Animator amin;
+
     void Update()
     {
         CheckInteractable();
         if (Input.GetButtonDown("Interact") && currentInteractable != null)
         {
             currentInteractable.Interact();
+            amin.SetBool("HandsPush", true);
         }
     }
 
