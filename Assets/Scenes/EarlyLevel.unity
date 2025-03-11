@@ -2088,7 +2088,7 @@ Transform:
   m_GameObject: {fileID: 145381017}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.59, y: 0.33, z: 5.5}
+  m_LocalPosition: {x: -20.15, y: 0.33, z: 63.5}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18494,7 +18494,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6315971012880991433, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1735375193797725662, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
@@ -18510,6 +18511,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1395722430062188388, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2134787676}
+    - targetCorrespondingSourceObject: {fileID: 1395722430062188388, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2134787684}
   m_SourcePrefab: {fileID: 100100000, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
 --- !u!1 &804964623 stripped
 GameObject:
@@ -44773,10 +44777,10 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 754327154}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2134787684}
+        m_TargetAssemblyTypeName: ReadBook, Assembly-CSharp
+        m_MethodName: OpenBook
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -44785,6 +44789,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2134787684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804964623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35a1def9d0f0254fb7ae6011be8915c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bookUI: {fileID: 1209400749}
 --- !u!1001 &2135663603
 PrefabInstance:
   m_ObjectHideFlags: 0
