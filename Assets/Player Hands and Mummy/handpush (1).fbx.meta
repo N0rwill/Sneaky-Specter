@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 79c9602b021da4a42b32b474e85cfa3c
+guid: 4156f3ccc55e1fb4281a1803e89848f1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: HandsIdle
+      name: GhostHandsPush
       takeName: Take 001
       internalID: 1827226128182048838
       firstFrame: 0
-      lastFrame: 725
+      lastFrame: 200
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
