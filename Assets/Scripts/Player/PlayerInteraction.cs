@@ -18,7 +18,7 @@ public class PlayerInteraction : MonoBehaviour
         if (Input.GetButtonDown("Interact") && currentInteractable != null)
         {
             currentInteractable.Interact();
-            amin.SetBool("HandsPush", true);
+            amin.SetTrigger("Push");
         }
     }
 
