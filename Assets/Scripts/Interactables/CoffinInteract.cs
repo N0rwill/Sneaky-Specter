@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class CoffinInteract : MonoBehaviour
 {
     public GameManager gameManager;
+    public MummyMove mummyMove;
 
     private bool canPush = true;
     private bool isMoving = false;
@@ -46,6 +47,9 @@ public class CoffinInteract : MonoBehaviour
 
         rb.isKinematic = true;
         isMoving = false;
+
+        yield return new WaitForSeconds(3f);
+        mummyMove.SitUp();
 
         yield return new WaitForSeconds(5f);
         gameManager.Win();
