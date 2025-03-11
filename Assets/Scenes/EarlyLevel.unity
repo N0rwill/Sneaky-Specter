@@ -34197,11 +34197,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 1520619931}
-  range: 10
   range: 40
   centrePoint: {fileID: 1578986899}
   player: {fileID: 145381018}
-  fieldOfView: 120
   fieldOfView: 150
   distance: 0
 --- !u!195 &1520619931
@@ -34311,8 +34309,6 @@ Transform:
   m_LocalPosition: {x: 33.69, y: 2.78, z: -23.2}
   m_LocalScale: {x: 3.104883, y: 3.104883, z: 3.104883}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1578986899}
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35529,13 +35525,10 @@ Transform:
   m_GameObject: {fileID: 1578986898}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.657407, y: -0.89536387, z: 7.8907967}
-  m_LocalScale: {x: 0.32207334, y: 0.32207334, z: 0.32207334}
   m_LocalPosition: {x: 0.5999985, y: 0, z: 1.2999992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1520619935}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1588163593

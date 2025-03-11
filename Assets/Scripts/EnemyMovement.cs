@@ -97,7 +97,6 @@ public class EnemyMovement : MonoBehaviour
         
         Vector3 randomPoint = center + Random.insideUnitSphere * range; //random point in a sphere 
         NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)) //documentation: https://docs.unity3d.com/ScriptReference/AI.NavMesh.SamplePosition.html
         if (NavMesh.SamplePosition(randomPoint, out hit, 5.0f, NavMesh.AllAreas))
         {
             //the 1.0f is the max distance from the random point to a point on the navmesh, might want to increase if range is big
@@ -105,7 +104,6 @@ public class EnemyMovement : MonoBehaviour
             result = hit.position;
             return true;
         }
-
             
         
         Debug.LogWarning($"Failed to find a valid NavMesh position for random point");
