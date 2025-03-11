@@ -48,10 +48,10 @@ public class CoffinInteract : MonoBehaviour
         rb.isKinematic = true;
         isMoving = false;
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         mummyMove.SitUp();
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
         gameManager.Win();
     }
 
