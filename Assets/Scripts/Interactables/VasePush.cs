@@ -56,7 +56,7 @@ public class VasePush : MonoBehaviour
             mesh.enabled = false;
             particles.Play();
             Outline.Destroy(GetComponent<Outline>());
-
+            
             vaseTrans = transform;
             enemyMovement.moveToVase(vaseTrans);
 

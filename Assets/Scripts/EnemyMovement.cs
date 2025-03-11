@@ -8,6 +8,8 @@ using Random = System.Random;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public GameManager gameManager;
+
     public VasePush vasePush;
     Transform vaseTrans;
 
@@ -15,7 +17,7 @@ public class EnemyMovement : MonoBehaviour
     public float range; //radius of sphere  
 
     public Transform centrePoint; //centre of the area the agent wants to move around in  
-                                  //instead of centrePoint you can set it as the transform of the agent if you don't care about a specific area  
+      
     public Transform player;
     public float fieldOfView = 120f;
 
@@ -50,6 +52,10 @@ public class EnemyMovement : MonoBehaviour
     private void chase()
     {
         agent.SetDestination(player.position);
+        if (distance <= 6)
+        {
+            gameManager.Lose();
+        }
         if (!playerInSight)
         {
             RandomMove(isVaseBroken);
@@ -132,5 +138,11 @@ public class EnemyMovement : MonoBehaviour
     {
         
         agent.SetDestination(vaseTrans.position);
+    }
+
+    public void Caught()
+    {
+        
+
     }
 }

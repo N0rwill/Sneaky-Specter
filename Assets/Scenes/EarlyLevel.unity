@@ -44709,6 +44709,10 @@ PrefabInstance:
       propertyPath: centrePoint
       value: 
       objectReference: {fileID: 1578986899}
+    - target: {fileID: 5146044213383991457, guid: ecb6ad15c28b9fe43b6f760d11f97644, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 801976477}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6405047068563127810, guid: ecb6ad15c28b9fe43b6f760d11f97644, type: 3}
