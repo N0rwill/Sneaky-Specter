@@ -10,12 +10,18 @@ public class DoorOpen : MonoBehaviour
     public Transform door;
     public bool isOpen = false;
     public bool isUnlocked = false;
+    private AudioSource lockedDoorAudio;
+
+    public GameObject doorLight1;
+    public GameObject doorLight2;
+    public GameObject doorLight3;
 
     public int switchCount = 0;
 
     void Start()
     {
         door = GetComponent<Transform>();
+        lockedDoorAudio = GetComponent<AudioSource>();
     }
 
     public void Interact()
@@ -26,6 +32,7 @@ public class DoorOpen : MonoBehaviour
         }
         else
         {
+            lockedDoorAudio.Play();
             hudController.SeceritySystemStillOn();
         }
     }
@@ -43,8 +50,17 @@ public class DoorOpen : MonoBehaviour
     {
         switchCount++;
 
-        if (switchCount == 3)
+        if (switchCount >= 1)
         {
+            doorLight1.SetActive(false);
+        }
+        if (switchCount >= 2)
+        {
+            doorLight2.SetActive(false);
+        }
+        if (switchCount >= 3)
+        {
+            doorLight3.SetActive(false);
             isUnlocked = true;
         }
     }
