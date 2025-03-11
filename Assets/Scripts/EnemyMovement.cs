@@ -1,16 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI; 
+using UnityEngine.AI;
+using Random = System.Random;
 
 
-public class EnemyMovement : MonoBehaviour 
+public class EnemyMovement : MonoBehaviour
 {
-    public NavMeshAgent agent;
-    public float range; //radius of sphere
+    public VasePush vasePush;
+    Transform vaseTrans;
 
-    public Transform centrePoint; //centre of the area the agent wants to move around in
-    //instead of centrePoint you can set it as the transform of the agent if you don't care about a specific area
+    public NavMeshAgent agent;
+    public float range; //radius of sphere  
+
+    public Transform centrePoint; //centre of the area the agent wants to move around in  
+                                  //instead of centrePoint you can set it as the transform of the agent if you don't care about a specific area  
     public Transform player;
     public float fieldOfView = 120f;
 
@@ -18,15 +23,13 @@ public class EnemyMovement : MonoBehaviour
     private bool playerInSight;
     private Vector3 lastRaycastDirection;
     private bool isLooking;
-
-
+    public bool isVaseBroken = false;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         playerInSight = false;
     }
-
 
     void Update()
     {
@@ -40,16 +43,16 @@ public class EnemyMovement : MonoBehaviour
         }
         else
         {
-            RandomMove();
+            RandomMove(isVaseBroken);
         }
-
     }
+
     private void chase()
     {
         agent.SetDestination(player.position);
-        if(!playerInSight) 
+        if (!playerInSight)
         {
-            RandomMove();
+            RandomMove(isVaseBroken);
         }
     }
 
@@ -93,38 +96,41 @@ public class EnemyMovement : MonoBehaviour
 
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
+        Vector3 randdom = UnityEngine.Random.insideUnitSphere;
 
-        
-        Vector3 randomPoint = center + Random.insideUnitSphere * range; //random point in a sphere 
+
+        Vector3 randomPoint = center + randdom * range; //random point in a sphere  
         NavMeshHit hit;
         if (NavMesh.SamplePosition(randomPoint, out hit, 5.0f, NavMesh.AllAreas))
         {
-            //the 1.0f is the max distance from the random point to a point on the navmesh, might want to increase if range is big
-            //or add a for loop like in the documentation
+            //the 1.0f is the max distance from the random point to a point on the navmesh, might want to increase if range is big  
+            //or add a for loop like in the documentation  
             result = hit.position;
             return true;
         }
-            
-        
+
         Debug.LogWarning($"Failed to find a valid NavMesh position for random point");
         result = Vector3.zero;
         return false;
     }
 
-    private void RandomMove()
+    private void RandomMove(bool isVaseBroken)
     {
-
-        if (agent.remainingDistance <= agent.stoppingDistance) //done with path
+        if (agent.remainingDistance <= agent.stoppingDistance && !isVaseBroken) //done with path  
         {
             Vector3 point;
-            if (RandomPoint(centrePoint.position, range, out point)) //pass in our centre point and radius of area
+            if (RandomPoint(centrePoint.position, range, out point)) //pass in our centre point and radius of area  
             {
-                Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
+                Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos  
                 agent.SetDestination(point);
                 Debug.Log($"New Destination Set: {point}");
             }
         }
     }
 
-
+    public void moveToVase(Transform vaseTrans)
+    {
+        
+        agent.SetDestination(vaseTrans.position);
+    }
 }

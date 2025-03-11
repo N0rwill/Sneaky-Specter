@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class VasePush : MonoBehaviour
 {
+    public EnemyMovement enemyMovement;
+    Transform vaseTrans;
+
     private bool isBroken = false;
     private bool canPush = true;
 
@@ -40,7 +43,7 @@ public class VasePush : MonoBehaviour
     }
 
     // when colliding with the ground the vase will break
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground") && !isBroken)
         {
@@ -53,6 +56,9 @@ public class VasePush : MonoBehaviour
             mesh.enabled = false;
             particles.Play();
             Outline.Destroy(GetComponent<Outline>());
+
+            vaseTrans = transform;
+            enemyMovement.moveToVase(vaseTrans);
 
             Destroy(gameObject, 5);
         }
