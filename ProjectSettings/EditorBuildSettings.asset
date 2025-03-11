@@ -8,7 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Art Test.unity
     guid: a32c86b366d0af9429ec2a4abcae01ce
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VideoRecordingForUI.unity
     guid: 47f995319eebfd64bb019e7120505b16
+  - enabled: 1
+    path: Assets/Scenes/EarlyLevel.unity
+    guid: 447c55649b422724e961e73b3b0195f8
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: a02c3c781da844c4ea7fc1175f1181ad
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: a5874106149d0834882d32020ff02821
   m_configObjects: {}
