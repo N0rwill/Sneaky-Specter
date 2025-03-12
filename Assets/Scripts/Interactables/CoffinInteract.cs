@@ -28,6 +28,9 @@ public class CoffinInteract : MonoBehaviour
             canPush = false;
             isMoving = true;
             StartCoroutine(MoveCoffin());
+
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
         }
     }
 
