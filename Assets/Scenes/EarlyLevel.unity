@@ -39059,12 +39059,16 @@ PrefabInstance:
       value: VaseFinal (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7579327255994633457, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 22.318491
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579327255994633457, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.280003
       objectReference: {fileID: 0}
     - target: {fileID: 7579327255994633457, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.278
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7579327255994633457, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_LocalPosition.z
@@ -46369,12 +46373,16 @@ PrefabInstance:
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7579327255994633457, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 24.786428
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579327255994633457, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.804
+      value: -10.31
       objectReference: {fileID: 0}
     - target: {fileID: 7579327255994633457, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.197
+      value: 1.051
       objectReference: {fileID: 0}
     - target: {fileID: 7579327255994633457, guid: d2b999fd906309e419eace487b9b9e85, type: 3}
       propertyPath: m_LocalPosition.z
@@ -65217,13 +65225,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286980065}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.0034603828, y: 0.0018976056, z: -0.0012435492, w: 0.9999914}
   m_LocalPosition: {x: -37.38, y: -6.9, z: -62.16}
   m_LocalScale: {x: 5.87304, y: 16.011526, z: 87.3144}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 604590010}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.397, y: 0.217, z: -0.142}
 --- !u!114 &1286980070
 MonoBehaviour:
   m_ObjectHideFlags: 0
