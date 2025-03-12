@@ -12074,6 +12074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1416033511}
+  playingUI: {fileID: 2056865737}
 --- !u!1001 &147580719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12611,7 +12612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 77b8511b79a90804eba36d3e12dbec26, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.901
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 77b8511b79a90804eba36d3e12dbec26, type: 3}
       propertyPath: m_LocalPosition.z
@@ -38893,7 +38894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f999ac58da1cc264ab04940c78345cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayTime: 2
+  delayTime: 3.5
 --- !u!4 &801976478
 Transform:
   m_ObjectHideFlags: 0

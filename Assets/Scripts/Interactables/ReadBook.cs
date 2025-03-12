@@ -30,6 +30,7 @@ public class ReadBook : MonoBehaviour
         if (isOpen)
         {
             bookUI.SetActive(false);
+            PlayingUI.SetActive(true);
         }
     }
 }
