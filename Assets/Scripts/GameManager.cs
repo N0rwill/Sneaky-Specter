@@ -4,7 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
+
 {
+    private GameObject PromptUI;
+    public float delayTime = 3.5f;
+
+// Start is called before the first frame update
+    void Start()
+    {
+        PromptUI = gameObject;
+        PromptUI.SetActive(true);
+        Invoke("DisableUI", delayTime);
+    }
+
+    void DisableUI()
+    {
+        PromptUI.SetActive(false);
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene("EarlyLevel");
@@ -33,13 +50,6 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Application has quit.");
-    }
-
-   
-    // Start is called before the first frame update
-    void Start()
-    {
-     
     }
 
     // Update is called once per frame
