@@ -25,7 +25,7 @@ public class FlipSwitch : MonoBehaviour
             StartCoroutine(SmoothRotate(hinge.transform, new Vector3(0, 0, -110), 0.5f));
 
             AudioSource audio = GetComponent<AudioSource>();
-            // audio.Play();
+            audio.Play();
         }
     }
 

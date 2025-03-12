@@ -10,7 +10,9 @@ public class DoorOpen : MonoBehaviour
     public Transform door;
     public bool isOpen = false;
     public bool isUnlocked = false;
-    private AudioSource lockedDoorAudio;
+    [SerializeField] private AudioSource lockedDoorAudio;
+    [SerializeField] private AudioSource OpeningDoorAudio;
+    public AudioSource allSwitchesAudio;
 
     public GameObject doorLight1;
     public GameObject doorLight2;
@@ -21,7 +23,6 @@ public class DoorOpen : MonoBehaviour
     void Start()
     {
         door = GetComponent<Transform>();
-        lockedDoorAudio = GetComponent<AudioSource>();
     }
 
     public void Interact()
@@ -41,8 +42,9 @@ public class DoorOpen : MonoBehaviour
     {
         if (isUnlocked && !isOpen)
         {
-            StartCoroutine(SmoothRotate(door, Vector3.up * -90, 1f));
+            StartCoroutine(SmoothRotate(door, Vector3.up * -90, 5f));
             isOpen = true;
+            OpeningDoorAudio.Play();
         }
     }
 
@@ -61,6 +63,7 @@ public class DoorOpen : MonoBehaviour
         if (switchCount >= 3)
         {
             doorLight3.SetActive(false);
+            allSwitchesAudio.Play();
             isUnlocked = true;
         }
     }
