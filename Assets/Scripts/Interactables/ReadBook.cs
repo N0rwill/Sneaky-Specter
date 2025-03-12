@@ -24,7 +24,6 @@ public class ReadBook : MonoBehaviour
         {
             bookUI.SetActive(true);
             Time.timeScale = 0;
-
         }
         if (isOpen)
         {
