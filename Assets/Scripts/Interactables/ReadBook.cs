@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ReadBook : MonoBehaviour
 {
     public GameObject bookUI;
+    public GameObject PlayingUI;
 
     private bool isOpen;
 
@@ -24,6 +25,7 @@ public class ReadBook : MonoBehaviour
         {
             bookUI.SetActive(true);
             Time.timeScale = 0;
+            PlayingUI.SetActive(false);
         }
         if (isOpen)
         {
