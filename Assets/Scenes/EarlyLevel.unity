@@ -18456,7 +18456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1735375193797725662, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.4
+      value: 5.34
       objectReference: {fileID: 0}
     - target: {fileID: 1735375193797725662, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18514,6 +18514,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1395722430062188388, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2134787684}
+    - targetCorrespondingSourceObject: {fileID: 1395722430062188388, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2134787685}
   m_SourcePrefab: {fileID: 100100000, guid: 3dc700dfdda02644cab4dabe3259b20e, type: 3}
 --- !u!1 &804964623 stripped
 GameObject:
@@ -44802,6 +44805,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookUI: {fileID: 1209400749}
+--- !u!114 &2134787685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804964623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fce0975586074419f37df4129f3b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bookTransform: {fileID: 0}
+  levitationHeight: 0.5
+  levitationSpeed: 1
 --- !u!1001 &2135663603
 PrefabInstance:
   m_ObjectHideFlags: 0
