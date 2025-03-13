@@ -77979,7 +77979,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.29687756, g: 0.1759968, b: 0.3301887, a: 1}
+  m_Color: {r: 0.1780883, g: 0.2105734, b: 0.4339623, a: 1}
   m_Intensity: 4.75
   m_Range: 10
   m_SpotAngle: 30
