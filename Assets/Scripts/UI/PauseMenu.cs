@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
+    public ReadBook readBook;
+
     public GameObject pauseMenu;
     public GameObject playingUI;
+    public GameObject settingsMenu;
 
-    private bool isPaused = false;
+    public bool isPaused = false;
 
     void Start()
     {
@@ -18,18 +21,19 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !readBook.isOpen)
         {
             if (isPaused)
             {
                 ResumeGame();
+                SettingsClose();
             }
             else
             {
                 PauseGame();
             }
         }
-        
+
         if (isPaused && pauseMenu != null)
         {
             Cursor.lockState = CursorLockMode.None;
@@ -56,5 +60,10 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
         playingUI.SetActive(true);
+    }
+
+    public void SettingsClose()
+    {
+        settingsMenu.SetActive(false);
     }
 }

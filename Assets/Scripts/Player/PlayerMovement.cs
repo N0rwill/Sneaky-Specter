@@ -52,8 +52,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-
-        // get the original scale of the player
         startYScale = transform.localScale.y;
         // get the original speed of the player
         walkSpeed = moveSpeed;

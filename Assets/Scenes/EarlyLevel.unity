@@ -991,6 +991,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1593923956}
     m_Modifications:
+    - target: {fileID: -7183526259823287816, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60048b7c826aea6409c2690b45ff63a5, type: 2}
+    - target: {fileID: -1476813794778874163, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.064
+      objectReference: {fileID: 0}
     - target: {fileID: 447060337792877749, guid: ff5fb8aeecd12e949bf0499a99e3c7f6, type: 3}
       propertyPath: m_Name
       value: PillarFinalShort
@@ -1046,14 +1054,6 @@ PrefabInstance:
     - target: {fileID: 972662820967538191, guid: ff5fb8aeecd12e949bf0499a99e3c7f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7183526259823287816, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 60048b7c826aea6409c2690b45ff63a5, type: 2}
-    - target: {fileID: -1476813794778874163, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.064
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6223,7 +6223,7 @@ RectTransform:
   m_GameObject: {fileID: 53714911}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1461475, y: 0.1461475, z: 0.1461475}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 664356974}
@@ -11980,7 +11980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7349daaa05c1aa24a82eabf000813df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hudController: {fileID: 0}
+  hudController: {fileID: 1898318410}
   playerReach: 5
   cam: {fileID: 1078396221}
   amin: {fileID: 3970560197912200348}
@@ -12073,8 +12073,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 928b96ed013d6ed45a256ebdab30c5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  readBook: {fileID: 2134787684}
   pauseMenu: {fileID: 1416033511}
   playingUI: {fileID: 2056865737}
+  settingsMenu: {fileID: 355517645}
+  isPaused: 0
 --- !u!1001 &147580719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23302,6 +23305,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1593923956}
     m_Modifications:
+    - target: {fileID: -7183526259823287816, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60048b7c826aea6409c2690b45ff63a5, type: 2}
+    - target: {fileID: -1476813794778874163, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.064
+      objectReference: {fileID: 0}
     - target: {fileID: 447060337792877749, guid: ff5fb8aeecd12e949bf0499a99e3c7f6, type: 3}
       propertyPath: m_Name
       value: PillarFinalShort (1)
@@ -23357,14 +23368,6 @@ PrefabInstance:
     - target: {fileID: 972662820967538191, guid: ff5fb8aeecd12e949bf0499a99e3c7f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7183526259823287816, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 60048b7c826aea6409c2690b45ff63a5, type: 2}
-    - target: {fileID: -1476813794778874163, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.064
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26210,14 +26213,14 @@ RectTransform:
   m_GameObject: {fileID: 622041060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3960215, y: 4.349097, z: 0.9903291}
+  m_LocalScale: {x: 1.4214554, y: 4.9176693, z: 1.0083514}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1664889343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.3, y: 94}
+  m_AnchoredPosition: {x: 12, y: 109}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &622041062
@@ -74369,13 +74372,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 145381023}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ResumeGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -77120,7 +77123,7 @@ RectTransform:
   m_GameObject: {fileID: 1664889342}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.3728204, y: 0.59632474, z: 1.0974598}
+  m_LocalScale: {x: 2.925, y: 0.41248003, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1773365892}
@@ -77128,10 +77131,10 @@ RectTransform:
   - {fileID: 622041061}
   m_Father: {fileID: 2056865738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 169, y: 39}
-  m_SizeDelta: {x: 103.20001, y: 124.36}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -305.78506, y: -224.92604}
+  m_SizeDelta: {x: 103.2, y: 124.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1664889344
 MonoBehaviour:
@@ -86729,7 +86732,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &1920417621
 Canvas:
   m_ObjectHideFlags: 0
@@ -100325,6 +100328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookUI: {fileID: 1209400749}
   PlayingUI: {fileID: 2056865737}
+  isOpen: 0
 --- !u!114 &2134787685
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class ReadBook : MonoBehaviour
     public GameObject bookUI;
     public GameObject PlayingUI;
 
-    private bool isOpen;
+    public bool isOpen;
 
     public void InteractWithBook()
     {

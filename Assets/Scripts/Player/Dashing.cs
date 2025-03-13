@@ -61,21 +61,24 @@ public class Dashing : MonoBehaviour
 
     private void Dash()
     {
+        // check if the player can dash
         if (dashCooldownTimer > 0) return;
         else dashCooldownTimer = dashCooldown;
 
         playerMovement.isDashing = true;
 
-        // get the forward direction
         Transform forwardT;
 
+        // no movement is pressed go in camera facing direction
         if (useCameraForward)
-            forwardT = playerCam; // where the player looking
+            forwardT = playerCam;
+        // movement is pressed go in the movement direction
         else
-            forwardT = orientation; // where the player facing
+            forwardT = orientation;
 
         Vector3 direction = GetDirection(forwardT);
 
+        // apply the force
         Vector3 forceToApply = direction * dashForce;
 
         if (!disableGravity)
