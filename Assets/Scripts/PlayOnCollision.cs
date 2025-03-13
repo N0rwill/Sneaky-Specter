@@ -6,22 +6,14 @@ public class PlayOnCollision : MonoBehaviour
 {
     public AudioSource audioSource;
 
+    private bool hasPlayed = false;
+
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !hasPlayed)
         {
             audioSource.Play();
+            hasPlayed = true;
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -10,27 +10,31 @@ public class ReadBook : MonoBehaviour
 
     private bool isOpen;
 
-    void Update()
+    public void InteractWithBook()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (!isOpen)
         {
-            bookUI.SetActive(false);
-            Time.timeScale = 1f;
+            OpenBook();
+        }
+        else if (isOpen)
+        {
+            CloseBook();
         }
     }
 
     public void OpenBook()
     {
-        if (!isOpen)
-        {
-            bookUI.SetActive(true);
-            Time.timeScale = 0;
-            PlayingUI.SetActive(false);
-        }
-        if (isOpen)
-        {
-            bookUI.SetActive(false);
-            PlayingUI.SetActive(true);
-        }
+        bookUI.SetActive(true);
+        Time.timeScale = 0;
+        PlayingUI.SetActive(false);
+        isOpen = true;
+    }
+
+    public void CloseBook()
+    {
+        bookUI.SetActive(false);
+        Time.timeScale = 1;
+        PlayingUI.SetActive(true);
+        isOpen = false;
     }
 }
