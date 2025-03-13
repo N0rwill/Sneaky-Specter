@@ -24392,7 +24392,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fed07b6ae9f073b40a2be09c75e9e944, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.657
+  m_Volume: 0.414
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -100301,7 +100301,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2134787684}
         m_TargetAssemblyTypeName: ReadBook, Assembly-CSharp
-        m_MethodName: OpenBook
+        m_MethodName: InteractWithBook
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
