@@ -991,14 +991,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1593923956}
     m_Modifications:
-    - target: {fileID: -7183526259823287816, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 60048b7c826aea6409c2690b45ff63a5, type: 2}
-    - target: {fileID: -1476813794778874163, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.064
-      objectReference: {fileID: 0}
     - target: {fileID: 447060337792877749, guid: ff5fb8aeecd12e949bf0499a99e3c7f6, type: 3}
       propertyPath: m_Name
       value: PillarFinalShort
@@ -1054,6 +1046,14 @@ PrefabInstance:
     - target: {fileID: 972662820967538191, guid: ff5fb8aeecd12e949bf0499a99e3c7f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7183526259823287816, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60048b7c826aea6409c2690b45ff63a5, type: 2}
+    - target: {fileID: -1476813794778874163, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.064
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6223,7 +6223,7 @@ RectTransform:
   m_GameObject: {fileID: 53714911}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.1461475, y: 0.1461475, z: 0.1461475}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 664356974}
@@ -23302,14 +23302,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1593923956}
     m_Modifications:
-    - target: {fileID: -7183526259823287816, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 60048b7c826aea6409c2690b45ff63a5, type: 2}
-    - target: {fileID: -1476813794778874163, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.064
-      objectReference: {fileID: 0}
     - target: {fileID: 447060337792877749, guid: ff5fb8aeecd12e949bf0499a99e3c7f6, type: 3}
       propertyPath: m_Name
       value: PillarFinalShort (1)
@@ -23365,6 +23357,14 @@ PrefabInstance:
     - target: {fileID: 972662820967538191, guid: ff5fb8aeecd12e949bf0499a99e3c7f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7183526259823287816, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60048b7c826aea6409c2690b45ff63a5, type: 2}
+    - target: {fileID: -1476813794778874163, guid: 40a497c5cd9cbe5429734213f7ebaade, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.064
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26210,14 +26210,14 @@ RectTransform:
   m_GameObject: {fileID: 622041060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4214554, y: 4.9176693, z: 1.0083514}
+  m_LocalScale: {x: 1.3960215, y: 4.349097, z: 0.9903291}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1664889343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: 109}
+  m_AnchoredPosition: {x: 10.3, y: 94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &622041062
@@ -86729,7 +86729,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1920417621
 Canvas:
   m_ObjectHideFlags: 0
