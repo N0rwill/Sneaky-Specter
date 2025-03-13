@@ -31,6 +31,7 @@ public class EnemyMovement : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         playerInSight = false;
+        
     }
 
     void Update()
@@ -51,6 +52,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void chase()
     {
+        agent.speed = 6f;
         agent.SetDestination(player.position);
         if (distance <= 6)
         {
@@ -122,6 +124,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void RandomMove(bool isVaseBroken)
     {
+        agent.speed = 4f;
         if (agent.remainingDistance <= agent.stoppingDistance && !isVaseBroken) //done with path  
         {
             Vector3 point;
