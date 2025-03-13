@@ -34,6 +34,7 @@ public class PauseMenu : MonoBehaviour
             }
         }
 
+        // Cursor lock
         if (isPaused && pauseMenu != null)
         {
             Cursor.lockState = CursorLockMode.None;

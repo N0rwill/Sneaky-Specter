@@ -24,14 +24,17 @@ public class PlayerInteraction : MonoBehaviour
 
     void CheckInteractable()
     {
+        // Raycast to check for interactables
         RaycastHit hit;
         Ray ray = new Ray(cam.position, cam.forward);
         if (Physics.Raycast(ray, out hit, playerReach))
         {
             if (hit.collider.tag == "Interactable")
             {
+                // get the interactable component
                 Interactable newInteractable = hit.collider.GetComponent<Interactable>();
 
+                // if the new interactable is different from the current one
                 if (currentInteractable && newInteractable != currentInteractable)
                 {
                     DisableCurrentInteractable();

@@ -14,7 +14,7 @@ public class CursorManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         Cursor.visible = true;
     }
 }
