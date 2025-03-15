@@ -34,12 +34,14 @@ public class CoffinInteract : MonoBehaviour
         }
     }
 
+
     private IEnumerator MoveCoffin()
     {
         rb.isKinematic = false;
         float moveSpeed = 10f;
         float rotationSpeed = 0.25f;
 
+        // Move coffin until it hits the ground
         while (!isGrounded)
         {
             rb.MovePosition(transform.position + Vector3.forward * moveSpeed * Time.deltaTime);
@@ -53,7 +55,7 @@ public class CoffinInteract : MonoBehaviour
         yield return new WaitForSeconds(2f);
         mummyMove.SitUp();
 
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3f);
         gameManager.Win();
     }
 

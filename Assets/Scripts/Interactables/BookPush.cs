@@ -15,6 +15,7 @@ public class BookPush : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    // Push the book if it is not on the floor
     public void Push()
     {
         if (!isOnFloor && canPush)
@@ -26,6 +27,7 @@ public class BookPush : MonoBehaviour
         }
     }
 
+    // Cooldown for pushing the book
     private IEnumerator PushCooldown()
     {
         yield return new WaitForSeconds(1f);

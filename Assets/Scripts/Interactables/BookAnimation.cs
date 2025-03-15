@@ -21,6 +21,7 @@ public class BookAnimation : MonoBehaviour
         Levitate();
     }
 
+    // makes book move up and down
     private void Levitate()
     {
         float newY = initialPosition.y + Mathf.Sin(Time.time * levitationSpeed) * levitationHeight;

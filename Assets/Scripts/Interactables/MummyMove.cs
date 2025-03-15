@@ -12,6 +12,7 @@ public class MummyMove : MonoBehaviour
         anim.enabled = false;
     }
 
+    // play the animation
     public void SitUp()
     {
         anim.enabled = true;

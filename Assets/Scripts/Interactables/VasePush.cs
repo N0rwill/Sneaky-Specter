@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class VasePush : MonoBehaviour
 {
     public EnemyMovement enemyMovement;
-    Transform vaseTrans;
+    public Transform vaseTrans;
 
     private bool isBroken = false;
     private bool canPush = true;
@@ -22,6 +22,7 @@ public class VasePush : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    // push the vase away from the player
     public void Push()
     {
         if (!isBroken && canPush)
@@ -52,14 +53,17 @@ public class VasePush : MonoBehaviour
             GetComponent<Collider>().enabled = false;
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();
+            particles.Play();
+
+            // disable the mesh renderer
             MeshRenderer mesh = GetComponent<MeshRenderer>();
             mesh.enabled = false;
-            particles.Play();
-            Outline.Destroy(GetComponent<Outline>());
-            
+
+            // move the enemy to the vase
             vaseTrans = transform;
             enemyMovement.moveToVase(vaseTrans);
 
+            Outline.Destroy(GetComponent<Outline>());
             Destroy(gameObject, 5);
         }
     }

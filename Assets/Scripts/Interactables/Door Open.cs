@@ -37,6 +37,7 @@ public class DoorOpen : MonoBehaviour
         }
     }
 
+    // Open the door
     public void OpenDoor()
     {
         if (isUnlocked && !isOpen)
@@ -47,6 +48,7 @@ public class DoorOpen : MonoBehaviour
         }
     }
 
+    // counts how many switches have been activated
     public void SwitchCounter()
     {
         switchCount++;
@@ -59,6 +61,7 @@ public class DoorOpen : MonoBehaviour
         {
             doorLight2.SetActive(false);
         }
+        // unlock the door if all switches have been activated
         if (switchCount >= 3)
         {
             doorLight3.SetActive(false);
@@ -67,6 +70,7 @@ public class DoorOpen : MonoBehaviour
         }
     }
 
+    // Smoothly rotate the door
     private IEnumerator SmoothRotate(Transform target, Vector3 byAngles, float duration)
     {
         Quaternion fromRotation = target.rotation;

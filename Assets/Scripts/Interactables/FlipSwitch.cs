@@ -16,6 +16,7 @@ public class FlipSwitch : MonoBehaviour
         hinge.transform.Rotate(0, 0, 50);
     }
 
+    // Flip the switch
     public void Flip()
     {
         if (!isFlipped)
@@ -29,6 +30,7 @@ public class FlipSwitch : MonoBehaviour
         }
     }
 
+    // smoothly Rotate the switch
     private IEnumerator SmoothRotate(Transform target, Vector3 byAngles, float duration)
     {
         Quaternion fromRotation = target.rotation;

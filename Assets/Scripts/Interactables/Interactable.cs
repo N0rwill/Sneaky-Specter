@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
+// controller for interactable objects
 public class Interactable : MonoBehaviour
 {
     Outline outline;

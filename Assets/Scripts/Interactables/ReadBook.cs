@@ -10,6 +10,7 @@ public class ReadBook : MonoBehaviour
 
     public bool isOpen;
 
+    // called by the interactable object
     public void InteractWithBook()
     {
         if (!isOpen)
