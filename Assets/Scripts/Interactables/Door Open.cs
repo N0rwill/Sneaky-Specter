@@ -34,7 +34,6 @@ public class DoorOpen : MonoBehaviour
         else
         {
             lockedDoorAudio.Play();
-            hudController.SeceritySystemStillOn();
         }
     }
 
