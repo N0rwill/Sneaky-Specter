@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -7,9 +5,9 @@ public class HudController : MonoBehaviour
 {
     public static HudController instance;
 
-    public bool tryingToUnlock = false;
+    private bool tryingToUnlock = false;
 
-    void Awake()
+    private void Awake()
     {
         instance = this;
         tryingToUnlock = false;

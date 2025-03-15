@@ -1,17 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
     public ReadBook readBook;
 
-    public GameObject pauseMenu;
-    public GameObject playingUI;
-    public GameObject settingsMenu;
+    [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject playingUI;
+    [SerializeField] private GameObject settingsMenu;
 
-    public bool isPaused = false;
+    private bool isPaused = false;
 
     void Start()
     {
