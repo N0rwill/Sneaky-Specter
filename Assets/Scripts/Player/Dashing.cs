@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,8 +10,8 @@ public class Dashing : MonoBehaviour
     public Transform playerCam;
 
     [Header("Dashing")]
-    public float dashForce;
-    public float dashDuration;
+    [SerializeField] private float dashForce;
+    [SerializeField] private float dashDuration;
 
     [Header("CameraEffects")]
     public PlayerCam pCam;
@@ -26,19 +24,19 @@ public class Dashing : MonoBehaviour
     public bool resetVal = true;
 
     [Header("Cooldown")]
-    public float dashCooldown;
+    [SerializeField] private float dashCooldown;
     private float dashCooldownTimer;
 
     [SerializeField] private Image dashCooldownImage;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
         playerMovement = GetComponent<PlayerMovement>();
         dashCooldownImage.fillAmount = 0;
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetButtonDown("Dash"))
             Dash();

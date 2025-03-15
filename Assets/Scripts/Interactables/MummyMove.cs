@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MummyMove : MonoBehaviour
 {
-    public Animator anim;
+    private Animator anim;
 
-    void Start()
+    private void Start()
     {
         anim = GetComponent<Animator>();
         anim.enabled = false;

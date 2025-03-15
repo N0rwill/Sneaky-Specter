@@ -1,9 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.UI;
 
 public class VasePush : MonoBehaviour
 {
@@ -13,11 +9,11 @@ public class VasePush : MonoBehaviour
     private bool isBroken = false;
     private bool canPush = true;
 
-    Rigidbody rb;
-    public Transform player;
+    private Rigidbody rb;
+    [SerializeField] private Transform player;
     [SerializeField] private ParticleSystem particles;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
     }

@@ -1,35 +1,32 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed;
+    private float moveSpeed;
     private float walkSpeed;
 
-    public float dashSpeed;
-    public float dashSpeedChangeFactor;
+    [SerializeField] private float dashSpeed;
+    [SerializeField] private float dashSpeedChangeFactor;
 
     public float groundDrag;
 
     [Header("Crouching")]
-    public float crouchSpeed;
+    [SerializeField] private float crouchSpeed;
     public float crouchYScale;
     private float startYScale;
 
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask groundMask;
-    bool isGrounded;
+    public bool isGrounded;
 
     [Header("Other")]
     public Transform orientation;
 
-    float horizontalInput;
-    float verticalInput;
+    private float horizontalInput;
+    private float verticalInput;
 
     Vector3 moveDirection;
     Rigidbody rb;
@@ -48,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     public PlayerCam playerCam;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
@@ -63,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         // ground check raycast
         isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, groundMask);
@@ -79,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
         StateHandler();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         MovePlayer();
     }

@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CoffinInteract : MonoBehaviour
 {
@@ -13,9 +10,9 @@ public class CoffinInteract : MonoBehaviour
     private bool isMoving = false;
     private bool isGrounded = false;
 
-    Rigidbody rb;
+    private Rigidbody rb;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
@@ -52,7 +49,7 @@ public class CoffinInteract : MonoBehaviour
         rb.isKinematic = true;
         isMoving = false;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         mummyMove.SitUp();
 
         yield return new WaitForSeconds(3f);

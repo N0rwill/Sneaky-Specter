@@ -1,17 +1,14 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class FlipSwitch : MonoBehaviour
 {
     public DoorOpen doorOpen;
     public GameObject hinge;
 
-    bool isFlipped = false;
+    private bool isFlipped = false;
 
-    void Start()
+    private void Start()
     {
         hinge.transform.Rotate(0, 0, 50);
     }

@@ -1,22 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BookAnimation : MonoBehaviour
 {
-    public Transform bookTransform;
-    public float levitationHeight = 0.5f;
-    public float levitationSpeed = 0.5f;
+    private Transform bookTransform;
+    private float levitationHeight = 0.5f;
+    private float levitationSpeed = 0.5f;
 
     private Vector3 initialPosition;
 
-    void Start()
+    private void Start()
     {
         bookTransform = GetComponent<Transform>();
         initialPosition = bookTransform.position;
     }
 
-    void Update()
+    private void Update()
     {
         Levitate();
     }

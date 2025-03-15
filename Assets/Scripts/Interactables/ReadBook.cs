@@ -1,12 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ReadBook : MonoBehaviour
 {
-    public GameObject bookUI;
-    public GameObject PlayingUI;
+    [SerializeField] private GameObject bookUI;
+    [SerializeField] private GameObject PlayingUI;
 
     public bool isOpen;
 
@@ -23,7 +20,7 @@ public class ReadBook : MonoBehaviour
         }
     }
 
-    public void OpenBook()
+    private void OpenBook()
     {
         bookUI.SetActive(true);
         Time.timeScale = 0;
@@ -31,7 +28,7 @@ public class ReadBook : MonoBehaviour
         isOpen = true;
     }
 
-    public void CloseBook()
+    private void CloseBook()
     {
         bookUI.SetActive(false);
         Time.timeScale = 1;

@@ -1,15 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveHand : MonoBehaviour
 {
     public PlayerCam playerCam;
 
-    public Transform camPos;
-    public Transform orientation;
+    [SerializeField] private Transform camPos;
+    [SerializeField] private Transform orientation;
 
-    void Update()
+    private void Update()
     {
         // Move the hand down and forwards relative to the camera's position
         transform.position = camPos.position;

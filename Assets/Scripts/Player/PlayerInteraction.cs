@@ -1,16 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
     public HudController hudController;
 
-    public float playerReach = 7.5f;
     public Transform cam;
-    Interactable currentInteractable;
+    public Interactable currentInteractable;
+    [SerializeField] private float playerReach = 7.5f;
 
-    public Animator amin;
+    [SerializeField] private Animator amin;
 
     void Update()
     {
@@ -77,7 +75,7 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    void OnDrawGizmos()
+    private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawRay(cam.position, cam.forward * playerReach);

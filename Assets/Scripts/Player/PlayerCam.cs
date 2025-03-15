@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
@@ -10,9 +8,9 @@ public class PlayerCam : MonoBehaviour
     public Transform orientation;
 
     public float xRotation;
-    float yRotation;
+    public float yRotation;
 
-    void Start()
+    private void Start()
     {
         // hide and lock cursor
         Cursor.lockState = CursorLockMode.Locked;
@@ -23,7 +21,7 @@ public class PlayerCam : MonoBehaviour
         yRotation = 0f;
     }
 
-    void Update()
+    private void Update()
     {
         // get mouse input
         float mouseX = Input.GetAxis("Mouse X") * sensX * Time.deltaTime;

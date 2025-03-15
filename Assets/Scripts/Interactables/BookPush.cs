@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BookPush : MonoBehaviour
@@ -7,10 +6,10 @@ public class BookPush : MonoBehaviour
     private bool canPush = true;
     private bool isOnFloor = false;
 
-    Rigidbody rb;
-    public Transform player;
+    private Rigidbody rb;
+    [SerializeField] private Transform player;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
     }

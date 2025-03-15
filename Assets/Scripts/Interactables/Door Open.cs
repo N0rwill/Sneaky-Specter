@@ -1,26 +1,24 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class DoorOpen : MonoBehaviour
 {
     public HudController hudController;
 
-    public Transform door;
-    public bool isOpen = false;
+    private Transform door;
+    private bool isOpen = false;
     public bool isUnlocked = false;
     [SerializeField] private AudioSource lockedDoorAudio;
     [SerializeField] private AudioSource OpeningDoorAudio;
-    public AudioSource allSwitchesAudio;
+    [SerializeField] private AudioSource allSwitchesAudio;
 
-    public GameObject doorLight1;
-    public GameObject doorLight2;
-    public GameObject doorLight3;
+    [SerializeField] private GameObject doorLight1;
+    [SerializeField] private GameObject doorLight2;
+    [SerializeField] private GameObject doorLight3;
 
     public int switchCount = 0;
 
-    void Start()
+    private void Start()
     {
         door = GetComponent<Transform>();
     }
@@ -38,7 +36,7 @@ public class DoorOpen : MonoBehaviour
     }
 
     // Open the door
-    public void OpenDoor()
+    private void OpenDoor()
     {
         if (isUnlocked && !isOpen)
         {
