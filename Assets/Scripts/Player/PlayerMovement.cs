@@ -4,8 +4,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
-    private float moveSpeed;
-    private float walkSpeed;
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float walkSpeed = 5f;
 
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashSpeedChangeFactor;
@@ -50,8 +50,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         startYScale = transform.localScale.y;
-        // get the original speed of the player
-        walkSpeed = moveSpeed;
 
         // Ensure playerCam is assigned
         if (playerCam == null)
@@ -201,7 +199,8 @@ public class PlayerMovement : MonoBehaviour
     {
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
         moveDirection.y = 0;
-        rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        // Increase force multiplier from 10f to 50f for more noticeable movement
+        rb.AddForce(50f * moveSpeed * moveDirection.normalized, ForceMode.Force);
     }
 
     // draw gizmo ground check ray

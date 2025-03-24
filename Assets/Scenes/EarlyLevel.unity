@@ -559,7 +559,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5d261a8054a6d46aa1fb1351d6a27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 17746300}
 --- !u!1 &19179563
 GameObject:
   m_ObjectHideFlags: 0
@@ -11981,8 +11980,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hudController: {fileID: 1898318410}
-  playerReach: 5
   cam: {fileID: 1078396221}
+  currentInteractable: {fileID: 0}
+  playerReach: 5
   amin: {fileID: 3970560197912200348}
 --- !u!114 &145381020
 MonoBehaviour:
@@ -11998,15 +11998,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orientation: {fileID: 1939301972}
   playerCam: {fileID: 32647937}
-  dashForce: 20
-  dashDuration: 0.25
+  dashForce: 25
+  dashDuration: 0.33
   pCam: {fileID: 1078396222}
   dashFov: 75
   useCameraForward: 0
   allowAllDirections: 1
   disableGravity: 0
   resetVal: 1
-  dashCooldown: 1.5
+  dashCooldown: 3
   dashCooldownImage: {fileID: 291945758}
 --- !u!114 &145381021
 MonoBehaviour:
@@ -12020,16 +12020,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cac4081104f2704caebada1c58bc45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
-  dashSpeed: 15
-  dashSpeedChangeFactor: 40
+  moveSpeed: 4
+  walkSpeed: 4
+  dashSpeed: 13
+  dashSpeedChangeFactor: 50
   groundDrag: 5
-  crouchSpeed: 2.5
+  crouchSpeed: 2
   crouchYScale: 1.15
   playerHeight: 2
   groundMask:
     serializedVersion: 2
     m_Bits: 1024
+  isGrounded: 0
   orientation: {fileID: 1939301972}
   state: 0
   isDashing: 0
@@ -12077,7 +12079,6 @@ MonoBehaviour:
   pauseMenu: {fileID: 1416033511}
   playingUI: {fileID: 2056865737}
   settingsMenu: {fileID: 355517645}
-  isPaused: 0
 --- !u!1001 &147580719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48540,6 +48541,7 @@ MonoBehaviour:
   sensY: 250
   orientation: {fileID: 1939301972}
   xRotation: 0
+  yRotation: 0
 --- !u!81 &1078396223
 AudioListener:
   m_ObjectHideFlags: 0
@@ -86391,7 +86393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38836534c0addef409658e63ed59c340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tryingToUnlock: 0
   interactText: {fileID: 664356975}
 --- !u!114 &1898318411
 MonoBehaviour:
@@ -100341,9 +100342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24fce0975586074419f37df4129f3b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookTransform: {fileID: 0}
-  levitationHeight: 0.5
-  levitationSpeed: 1
 --- !u!1001 &2135663603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100727,6 +100725,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 801976477}
+    - target: {fileID: 7296455783614452236, guid: ecb6ad15c28b9fe43b6f760d11f97644, type: 3}
+      propertyPath: m_Speed
+      value: 3.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6405047068563127810, guid: ecb6ad15c28b9fe43b6f760d11f97644, type: 3}
